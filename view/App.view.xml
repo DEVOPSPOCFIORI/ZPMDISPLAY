@@ -1,0 +1,11 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="homedepot.YDSD_OHMBAY.controller.App"
+	displayBlock="true"
+	xmlns="sap.m">
+
+	<App id="ohmapp"
+		 busy="{appView>/busy}"
+		 busyIndicatorDelay="{appView>/delay}"/>
+
+</mvc:View>

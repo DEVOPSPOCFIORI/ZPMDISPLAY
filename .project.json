@@ -1,0 +1,35 @@
+{
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/ZPMAPP_SRV_02",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "DEV_GATEWAY",
+    "name": "zssdr"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  },
+  "hcpdeploy": {
+    "account": "p1942762298trial",
+    "name": "zpmdisplay",
+    "lastVersionWeTriedToDeploy": "2"
+  },
+  "generation": [
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Mon, 18 Dec 2017 01:56:40 GMT"
+    }
+  ],
+  "hybrid": {
+    "backendDestination": "SOH"
+  }
+}

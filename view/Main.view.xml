@@ -1,0 +1,113 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:sap.ui.core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" controllerName="homedepot.YDSD_OHMBAY.controller.Main">
+	<!--<semantic:DetailPage title="PM Notification">-->
+	<!--	<semantic:content>-->
+	<App>
+	<pages>
+		<Page title="Display Notification">
+			<headerContent>
+				<!--<Image src="Images/MohakLogo.png"/>-->
+				</headerContent>
+			<content>
+					 <Button tooltip="Display" width="100px" height="100px" press="display" icon="sap-icon://display"/>
+				    
+				    		<f:SimpleForm minWidth="1024" maxContainerCols="3" editable="false" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2" class="editableForm" backgroundDesign="Transparent">
+				<f:content>
+				     
+				     <core:Title text="Notification"/>
+					<Label text="Notification No" design="Bold"/>
+					<Input value="{DisplayModel>/NotifNo}"/>
+					 <Input width="100%" value="{DisplayModel>/NotificationRd/NotifType}" editable="false"/>
+					        <ComboBox xmlns="sap.m" selectedItem="combobox1" value="List Item 1" selectedKey="combo1" selectedItemId="item9" id="combobox2" visible="false">
+												<items>
+													<sap.ui.core:ListItem text="Maintainance Request" key="M1" id="__item16"/>
+													<sap.ui.core:ListItem text="Breakdown" key="M2" id="__item17"/>
+													<sap.ui.core:ListItem text="Not Listed" key="M3" id="__item18"/>
+												</items>
+											</ComboBox>
+		
+					<Label text="Short Description" design="Bold"/>
+					<Input value="{DisplayModel>/NotificationRd/ShortText}" editable="false"/>
+					
+					</f:content>
+					</f:SimpleForm>
+				     	
+				    	
+				    	<Panel expanded="true" width="auto" headerText="Reference Object" class="sapUiResponsiveMargin" expandable="true" backgroundDesign="Transparent">
+				    		
+				    		<f:SimpleForm minWidth="1024" maxContainerCols="3" editable="false" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm" backgroundDesign="Transparent">
+				<f:content>
+					<!--<core:Title text="Office" />-->
+					<Label text="Functional Loc" design="Bold"/>
+					 <Input value="{DisplayModel>/NotificationRd/FunctLoc}" editable="false"/>
+						<ComboBox xmlns="sap.m" selectedItem="combobox2" value="List Item 2" selectedKey="combo2" selectedItemId="item10" id="combobox02" visible="false" editable="false">
+												<items>
+													<sap.ui.core:ListItem text="DAL" key="DAL" id="comboid4"/>
+													<sap.ui.core:ListItem text="DAL1" key="DAL1" id="comboid5"/>
+													<sap.ui.core:ListItem text="DAL2" key="DAL2" id="comboid6"/>
+													<sap.ui.core:ListItem text="FACI" key="FACI" id="comboid7"/>
+													<sap.ui.core:ListItem text="ROOF" key="ROOF" id="comboid8"/>
+												</items>
+						</ComboBox>
+						
+					<Label text="Equipment" design="Bold"/>
+					<Input value="{DisplayModel>/NotificationRd/Equipment}" editable="false"/>
+					
+					
+				</f:content>
+			</f:SimpleForm>
+			</Panel>
+				    	
+				<Panel expandable="true" expanded="true" width="auto" headerText="Start/End dates" class="sapUiResponsiveMargin" backgroundDesign="Transparent">
+					
+				<f:SimpleForm minWidth="1024" maxContainerCols="4" editable="false" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm" backgroundDesign="Transparent"> 
+				<f:content>
+					
+					<Label text="Required Start" design="Bold"/>
+				     <Input value="{DisplayModel>/NotificationRd/Desstdate}" editable="false"/>
+				     <Input value="{DisplayModel>/NotificationRd/Dessttime}" editable="false"/>
+					
+					<Label text="Required End" design="Bold"/>
+					  <Input value="{DisplayModel>/NotificationRd/Desenddate}" editable="false"/>
+					  <Input value="{DisplayModel>/NotificationRd/Desendtm}" editable="false"/>
+					<CheckBox text="Breakdown" enabled="false" visible="false"/>
+					
+					
+				</f:content>
+	            </f:SimpleForm>
+					
+				</Panel>	    	
+				    	
+				    	
+				 <Panel expandable="true" expanded="true" width="auto" headerText="Resposibilities" class="sapUiResponsiveMargin" backgroundDesign="Transparent">   	
+				 
+				 	<f:SimpleForm minWidth="1024" maxContainerCols="4" editable="false" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm" backgroundDesign="Transparent"> 
+				<f:content>
+				
+				<Label text="Planner Group" design="Bold"/>
+			      <Input value="{DisplayModel>/NotificationRd/Plangroup}" editable="false"/>
+				  <Input value="{DisplayModel>/NotificationRd/Planplant}" editable="false"/>
+				
+				<Label text="Main WorkCtr" design="Bold"/>
+				   <Input value="{DisplayModel>/NotificationRd/PmWkctr}" editable="false"/>
+		           <Input value="{DisplayModel>/NotificationRd/Maintplant}" editable="false"/>
+				  
+				<Label text="Department Resp" design="Bold"/>
+				 <Input value="{DisplayModel>/NotificationRd/Dept}" editable="false"/>
+				
+				<Label text="Person respons" design="Bold"/>
+				 <Input value="{DisplayModel>/NotificationRd/Respons}" editable="false"/>
+				
+				<Label text="Reported by" design="Bold"/>
+				
+				<Input value="{DisplayModel>/NotificationRd/Reportedby}" editable="false"/>
+					
+			    </f:content>
+				</f:SimpleForm>
+				 
+				 </Panel>
+				    	
+				</content>
+	</Page>
+	</pages>
+	</App>
+</mvc:View>

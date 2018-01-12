@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "homedepot.YDSD_OHMBAY.ZPMDisplay",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#ZPMDisplay-Display",
+        "navigationComponentName": "homedepot.YDSD_OHMBAY",
+        "intentSemanticObject": "ZPMDisplay",
+        "intentAction": "Display",
+        "html5ApplicationName": "zpmdisplay",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "577b8c3e-93b1-4e9c-96fe-67566d509496-1513411134847"
+        ],
+        "contentPackages": [
+            "5891eaa6-e3d0-4153-8fc3-1883284b6a37-1513411008450"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Display Notification",
+        "subtitle": "IW23",
+        "searchKeywords": "Display Notification,IW23",
+        "displayIconUrl": "sap-icon://display",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
